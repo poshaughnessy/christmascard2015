@@ -1,10 +1,17 @@
 const mojs = require('mo-js');
-
-let windowHeight = window.innerHeight;
+const Howl = require('howler').Howl;
 
 let intro = document.querySelector('#starwars-intro');
 let logo = document.querySelector('#starwars-logo');
 let crawl = document.querySelector('#starwars-crawl');
+
+const starWarsTheme = new Howl({urls:
+  [
+    'sounds/Star_Wars_original_opening_crawl_1977.ogg',
+    'sounds/Star_Wars_original_opening_crawl_1977.mp3'
+  ],
+  buffer: true,
+  volume: 1.0});
 
 let timeline = new mojs.Timeline({
   onComplete: function() {
@@ -34,9 +41,8 @@ let logoTween = new mojs.Tween({
   delay: 0,
   duration: 9000,
   onStart: function() {
-    console.log('Make logo visible', logo);
+    starWarsTheme.play();
     logo.style.opacity = 1;
-    //starWarsTheme.play();
   },
   onUpdate: function(progress) {
     logo.style.transform = `scale(${1.8 - (progress * 1.7)})`;
@@ -47,12 +53,12 @@ let logoTween = new mojs.Tween({
 });
 
 let crawlTween = new mojs.Tween({
-  delay: 12000,
+  delay: 11500,
   duration: 50000,
   onUpdate: function(progress) {
     crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${1200 - (progress * 2500)}px)`;
     if (progress > 0.9) {
-      logo.style.opacity = 1 - ((progress - 0.9) * 10);
+      crawl.style.opacity = 1 - ((progress - 0.9) * 10);
     }
   }
 });

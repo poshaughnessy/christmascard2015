@@ -8,7 +8,7 @@ console.log('Running...');
 
 starfield();
 
-//mainTimeline.add(logoTimeline);   // TODO put back
-mainTimeline.add(starWarsTimeline); // TODO change back to append
+mainTimeline.add(logoTimeline);
+mainTimeline.append(starWarsTimeline); // TODO change back to append
 
 mainTimeline.start();
