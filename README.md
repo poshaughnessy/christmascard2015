@@ -22,3 +22,10 @@ In progress...
 
 `npm run build`
 
+## Credits
+
+Star Wars animation based on [Star Wars opening crawl](http://codepen.io/TimPietrusky/pen/eHGfj) by
+[Tim Pietrusky](http://codepen.io/TimPietrusky).
+
+Bounce sound based on ["Ping Pong Ball Bouncing" by Maynardkenmuir](https://freesound.org/people/Maynardkenmuir/sounds/328108/),
+[CC Attribution Noncommercial](http://creativecommons.org/licenses/by-nc/3.0/).
