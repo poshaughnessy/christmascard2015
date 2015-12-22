@@ -39,7 +39,7 @@ let logoTween = new mojs.Tween({
     //starWarsTheme.play();
   },
   onUpdate: function(progress) {
-    logo.style.transform = `scale(${2 - (progress * 1.9)})`;
+    logo.style.transform = `scale(${1.8 - (progress * 1.7)})`;
     if (progress > 0.5) {
       logo.style.opacity = 1 - ((progress - 0.5) * 2);
     }
@@ -47,13 +47,13 @@ let logoTween = new mojs.Tween({
 });
 
 let crawlTween = new mojs.Tween({
-  delay: 4000,
-  duration: 10000,
-  onStart: function() {
-    crawl.style.opacity = 1;
-  },
+  delay: 12000,
+  duration: 50000,
   onUpdate: function(progress) {
-    //crawl.style.transform = 'translateY(' + (progress * -10) + 'px)';
+    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${1200 - (progress * 2500)}px)`;
+    if (progress > 0.9) {
+      logo.style.opacity = 1 - ((progress - 0.9) * 10);
+    }
   }
 });
 
