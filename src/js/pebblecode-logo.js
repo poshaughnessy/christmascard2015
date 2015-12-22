@@ -4,7 +4,7 @@ const Howl = require('howler').Howl;
 let windowHeight = window.innerHeight;
 let halfWindowHeight = windowHeight / 2;
 let letters = document.querySelectorAll('#pebblecode-logo img');
-let bounceTweens = new mojs.Timeline();
+let timeline = new mojs.Timeline();
 
 const kickSound = new Howl({urls: ['sounds/ping-pong-bounce.mp3', 'sounds/ping-pong-bounce.wav'], volume: 0.3})
 
@@ -30,11 +30,7 @@ function createBounceTween(i) {
 
 
 for( let i=0; i < letters.length; i++ ) {
-  bounceTweens.add(createBounceTween(i));
+  timeline.add(createBounceTween(i));
 }
 
-function start() {
-  bounceTweens.start();
-}
-
-module.exports = start;
+module.exports = timeline;

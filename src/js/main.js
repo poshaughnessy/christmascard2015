@@ -1,7 +1,13 @@
-let logoAnimation = require('./pebblecode-logo-animation');
+let logoTimeline = require('./pebblecode-logo');
 let starfield = require('./starfield');
+
+let mainTimeline = new mojs.Timeline();
 
 console.log('Running...');
 
-logoAnimation();
 starfield();
+
+mainTimeline.add(logoTimeline);
+
+mainTimeline.start();
+
