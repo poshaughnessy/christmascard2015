@@ -1,0 +1,31 @@
+{
+  "name": "christmascard2015",
+  "version": "1.0.0",
+  "description": "Peter's digital Christmas card for 2015",
+  "scripts": {
+    "build": "webpack --colors --progress",
+    "start": "node dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poshaughnessy/christmascard2015.git"
+  },
+  "author": "Peter O'Shaughnessy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poshaughnessy/christmascard2015/issues"
+  },
+  "homepage": "https://github.com/poshaughnessy/christmascard2015#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.21",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "howler": "^1.1.28",
+    "mo-js": "^0.147.4"
+  }
+}
