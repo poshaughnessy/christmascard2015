@@ -54,9 +54,9 @@ let logoTween = new mojs.Tween({
 
 let crawlTween = new mojs.Tween({
   delay: 11500,
-  duration: 50000,
+  duration: 80000,
   onUpdate: function(progress) {
-    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${1200 - (progress * 2500)}px)`;
+    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${1400 - (progress * 2500)}px)`;
     if (progress > 0.9) {
       crawl.style.opacity = 1 - ((progress - 0.9) * 10);
     }

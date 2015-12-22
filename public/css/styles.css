@@ -84,8 +84,8 @@ body {
   text-align: justify;
   -webkit-transform-origin: 50% 75%;
   transform-origin: 50% 75%;
-  -webkit-transform: perspective(300px) rotateX(25deg) translateY(1200px);
-  transform: perspective(300px) rotateX(25deg) translateY(1200px);
+  -webkit-transform: perspective(300px) rotateX(25deg) translateY(1400px);
+  transform: perspective(300px) rotateX(25deg) translateY(1400px);
 }
 
 #starwars-logo {
