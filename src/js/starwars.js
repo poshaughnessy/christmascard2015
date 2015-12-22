@@ -45,7 +45,7 @@ let logoTween = new mojs.Tween({
     logo.style.opacity = 1;
   },
   onUpdate: function(progress) {
-    logo.style.transform = `scale(${1.8 - (progress * 1.7)})`;
+    logo.style.transform = `scale(${2 - (progress * 1.9)})`;
     if (progress > 0.5) {
       logo.style.opacity = 1 - ((progress - 0.5) * 2);
     }
@@ -53,10 +53,10 @@ let logoTween = new mojs.Tween({
 });
 
 let crawlTween = new mojs.Tween({
-  delay: 11500,
+  delay: 11000,
   duration: 80000,
   onUpdate: function(progress) {
-    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${1400 - (progress * 2500)}px)`;
+    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${1600 - (progress * 2500)}px)`;
     if (progress > 0.9) {
       crawl.style.opacity = 1 - ((progress - 0.9) * 10);
     }
