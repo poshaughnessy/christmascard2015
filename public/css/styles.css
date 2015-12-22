@@ -67,7 +67,7 @@ body {
 }
 
 #starwars-intro {
-  font-size: 2em;
+  font-size: 3em;
   color: #4bd5ee;
   opacity: 0;
   -webkit-animation: intro 6s ease-out 1s;

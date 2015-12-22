@@ -3,8 +3,13 @@ const Howl = require('howler').Howl;
 
 let windowHeight = window.innerHeight;
 let halfWindowHeight = windowHeight / 2;
+let container = document.querySelector('#pebblecode-logo');
 let letters = document.querySelectorAll('#pebblecode-logo img');
-let timeline = new mojs.Timeline();
+let timeline = new mojs.Timeline({
+  onComplete: function() {
+    console.log('Pebble Code logo animation complete');
+  }
+});
 
 const kickSound = new Howl({urls: ['sounds/ping-pong-bounce.mp3', 'sounds/ping-pong-bounce.wav'], volume: 0.3})
 
@@ -32,5 +37,15 @@ function createBounceTween(i) {
 for( let i=0; i < letters.length; i++ ) {
   timeline.add(createBounceTween(i));
 }
+
+let fadeTween = new mojs.Tween({
+  delay: 4000,
+  duration: 1000,
+  onUpdate: function(progress) {
+    container.style.opacity = 1-progress;
+  }
+});
+
+timeline.add(fadeTween);
 
 module.exports = timeline;
