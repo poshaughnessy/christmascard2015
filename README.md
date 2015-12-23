@@ -25,10 +25,18 @@ Load up at: `http://localhost:9000`
 
 `npm start`
 
+## Improvements
+
+The fade and crawl animations should really be keyframe animations in CSS - that would be easier and they
+would perform better than being powered by JavaScript. I ended up using mo.js for all the animations basically
+because that's what I started with for the pebble {code} logo animation and it kind of took over as I kept going.
+
 ## Credits
 
 Loosely based on the [Star Wars opening crawl](http://codepen.io/TimPietrusky/pen/eHGfj) by
 [Tim Pietrusky](http://codepen.io/TimPietrusky).
+
+Starfield background based on [codepen.io/WillemCrnlssn](http://codepen.io/WillemCrnlssn/pen/JgFGs) by [WillemCrnlssn](http://codepen.io/WillemCrnlssn).
 
 Restart icon by [Icons8](https://thenounproject.com/Icons8) - public domain.
 
