@@ -63,7 +63,7 @@ let crawlTween = new mojs.Tween({
   duration: 80000,
   onStart: function() {
     crawl.style.opacity = 1;
-  }
+  },
   onUpdate: function(progress) {
     crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${crawlStartY - (progress * crawlMoveY)}px)`;
     if (progress > 0.9) {
