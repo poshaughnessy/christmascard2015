@@ -36,7 +36,7 @@ because that's what I started with for the pebble {code} logo animation and it k
 Loosely based on the [Star Wars opening crawl](http://codepen.io/TimPietrusky/pen/eHGfj) by
 [Tim Pietrusky](http://codepen.io/TimPietrusky).
 
-Starfield background based on [codepen.io/WillemCrnlssn](http://codepen.io/WillemCrnlssn/pen/JgFGs) by [WillemCrnlssn](http://codepen.io/WillemCrnlssn).
+Starfield background based on [codepen.io/WillemCrnlssn/pen/JgFGs](http://codepen.io/WillemCrnlssn/pen/JgFGs) by [WillemCrnlssn](http://codepen.io/WillemCrnlssn).
 
 Restart icon by [Icons8](https://thenounproject.com/Icons8) - public domain.
 
