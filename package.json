@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/poshaughnessy/christmascard2015.git"
   },
+  "engines": {
+    "node" : "4"
+  },
   "author": "Peter O'Shaughnessy",
   "license": "MIT",
   "bugs": {
