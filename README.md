@@ -27,6 +27,8 @@ In progress...
 The [Star Wars opening crawl](http://codepen.io/TimPietrusky/pen/eHGfj) by
 [Tim Pietrusky](http://codepen.io/TimPietrusky) was very helpful, thanks Tim.
 
+Restart icon by [Icons8](https://thenounproject.com/Icons8) - public domain.
+
 Bounce sound based on ["Ping Pong Ball Bouncing" by Maynardkenmuir](https://freesound.org/people/Maynardkenmuir/sounds/328108/),
 [CC Attribution Noncommercial](http://creativecommons.org/licenses/by-nc/3.0/).
 

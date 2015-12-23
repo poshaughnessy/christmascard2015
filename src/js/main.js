@@ -2,13 +2,23 @@ let logoTimeline = require('./pebblecode-logo');
 let starWarsTimeline = require('./starwars');
 let starfield = require('./starfield');
 
-let mainTimeline = new mojs.Timeline();
+let messagePageEl = document.getElementById('message-page');
+let restartEl = document.getElementById('restart');
 
-console.log('Running...');
+let mainTimeline = new mojs.Timeline({
+  onComplete: function() {
+    messagePageEl.style.display = 'block';
+  }
+});
 
 starfield();
 
 mainTimeline.add(logoTimeline);
-mainTimeline.append(starWarsTimeline); // TODO change back to append
+mainTimeline.append(starWarsTimeline);
 
 mainTimeline.start();
+
+restartEl.onclick = function() {
+  messagePageEl.style.display = 'none';
+  mainTimeline.restart();
+};

@@ -3,6 +3,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "News Cycle","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 body {
@@ -44,6 +45,7 @@ body {
 #pebblecode-logo {
   width: 54em;
   height: 100%;
+  white-space: nowrap;
 }
 
 #pebblecode-logo img {
@@ -66,7 +68,6 @@ body {
 }
 
 #starwars-intro {
-  font-family: "News Cycle","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-size: 3em;
   color: #4bd5ee;
   opacity: 0;
@@ -76,7 +77,6 @@ body {
 
 #starwars-crawl {
   position: relative;
-  font-family: "News Cycle","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-size: 3em;
   font-weight: bold;
   color: #ff6;
@@ -102,4 +102,25 @@ body {
 #starwars-logo {
   text-align: center;
   opacity: 0;
+}
+
+#message-page {
+  display: none;
+  font-size: 2em;
+  color: #4bd5ee;
+  text-align: center;
+}
+
+#restart {
+  cursor: pointer;
+}
+
+#restart img {
+  width: 5em;
+}
+
+#restart p {
+  font-family: "Helvetic Neue", Helvetica, Arial;
+  margin-top: 0;
+  text-align: center;
 }

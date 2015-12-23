@@ -28,7 +28,7 @@ function createBounceTween(i) {
     },
     onUpdate: function(progress) {
       var bounceProgress = mojs.easing.bounce.out(progress);
-      letter.style.transform = `translateY(${(halfWindowHeight * bounceProgress - 100)}px)`;
+      letter.style.transform = `translateY(${((halfWindowHeight + 100) * bounceProgress) - 200}px)`;
     }
   });
 }

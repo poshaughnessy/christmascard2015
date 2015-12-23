@@ -1,6 +1,12 @@
 const mojs = require('mo-js');
 const Howl = require('howler').Howl;
 
+const windowHeight = window.innerHeight;
+
+/* The crawl is roughly 2000px high */
+const crawlStartY = windowHeight + Math.min(windowHeight, 600);
+const crawlMoveY = Math.max(windowHeight * 3, 2100);
+
 let intro = document.querySelector('#starwars-intro');
 let logo = document.querySelector('#starwars-logo');
 let crawl = document.querySelector('#starwars-crawl');
@@ -56,7 +62,7 @@ let crawlTween = new mojs.Tween({
   delay: 11000,
   duration: 80000,
   onUpdate: function(progress) {
-    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${1600 - (progress * 2500)}px)`;
+    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${crawlStartY - (progress * crawlMoveY)}px)`;
     if (progress > 0.9) {
       crawl.style.opacity = 1 - ((progress - 0.9) * 10);
     }
