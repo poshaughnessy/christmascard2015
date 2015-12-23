@@ -96,6 +96,7 @@ body {
 
 #starwars-crawl h1 {
   font-size: 1.41em;
+  margin-top: 0;
 }
 
 #starwars-crawl p {
