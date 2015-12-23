@@ -1,3 +1,9 @@
+/**
+ * NB. Most of this would be better moved to CSS keyframes animation.
+ * I ended up with this because this whole thing started from me trying
+ * out mo.js. Then once the pebble {code} animation was in mo.js, I
+ * seemed a bit locked in. Oh well...
+ */
 const mojs = require('mo-js');
 const Howl = require('howler').Howl;
 
@@ -51,7 +57,9 @@ let logoTween = new mojs.Tween({
     logo.style.opacity = 1;
   },
   onUpdate: function(progress) {
-    logo.style.transform = `scale(${2 - (progress * 1.9)})`;
+    let transform = `scale(${2 - (progress * 1.9)})`;
+    logo.style.webkitTransform = transform;
+    logo.style.transform = transform;
     if (progress > 0.5) {
       logo.style.opacity = 1 - ((progress - 0.5) * 2);
     }
@@ -65,7 +73,9 @@ let crawlTween = new mojs.Tween({
     crawl.style.opacity = 1;
   },
   onUpdate: function(progress) {
-    crawl.style.transform = `perspective(300px) rotateX(25deg) translateY(${crawlStartY - (progress * crawlMoveY)}px)`;
+    let transform = `perspective(300px) rotateX(25deg) translateY(${crawlStartY - (progress * crawlMoveY)}px)`;
+    crawl.style.webkitTransform = transform;
+    crawl.style.transform = transform;
     if (progress > 0.9) {
       crawl.style.opacity = 1 - ((progress - 0.9) * 10);
     }
