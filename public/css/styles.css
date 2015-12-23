@@ -3,7 +3,8 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "News Cycle","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-family: "News Cycle", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -38,12 +39,8 @@ body {
   justify-content: center;
 }
 
-.center-contents > div {
-
-}
-
 #pebblecode-logo {
-  width: 54em;
+  width: 39em;
   height: 100%;
   white-space: nowrap;
 }
@@ -54,17 +51,39 @@ body {
   margin-left: 0.2em;
 }
 
-#pebblecode-logo img:nth-child(1) { /* p */
-  top: 2em;
+#pebblecode-logo img {
+
+}
+#pebblecode-logo img:nth-child(1) {  /* p */
+  /* 100% ~= 7em */
+  height: 4.9em;
+  top: 1.4em;
   margin-left: 0;
 }
-
-#pebblecode-logo img:nth-child(7) { /* { */
-  top: 1.8em;
-  margin-left: 2em;
+#pebblecode-logo img:nth-child(2),   /* e */
+#pebblecode-logo img:nth-child(6),   /* e */
+#pebblecode-logo img:nth-child(8),   /* c */
+#pebblecode-logo img:nth-child(9),   /* o */
+#pebblecode-logo img:nth-child(11) { /* e */
+  /* 100% ~= 5em */
+  height: 3.5em;
 }
+#pebblecode-logo img:nth-child(3),   /* b */
+#pebblecode-logo img:nth-child(4),   /* b */
+#pebblecode-logo img:nth-child(5),   /* l */
+#pebblecode-logo img:nth-child(10) { /* d */
+  /* 100% ~= 7em */
+  height: 4.9em;
+}
+
+#pebblecode-logo img:nth-child(7),   /* { */
 #pebblecode-logo img:nth-child(12) { /* } */
-  top: 1.8em;
+  /* 100% ~= 8.25em */
+  height: 5.78em;
+  top: 1.2em;
+}
+#pebblecode-logo img:nth-child(7) { /* { */
+  margin-left: 2em;
 }
 
 #starwars-intro {
@@ -73,6 +92,10 @@ body {
   opacity: 0;
   -webkit-animation: intro 6s ease-out 1s;
   animation: intro 6s ease-out 1s;
+}
+
+#starwars-crawl-container {
+  z-index: 10;
 }
 
 #starwars-crawl {
@@ -110,7 +133,7 @@ body {
 
 #message-page {
   display: none;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #4bd5ee;
   text-align: center;
 }
@@ -124,7 +147,7 @@ body {
 }
 
 #restart p {
-  font-family: "Helvetic Neue", Helvetica, Arial;
+  font-family: "Helvetic Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
   text-align: center;
 }

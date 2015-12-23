@@ -14,14 +14,18 @@ First:
 
 Then:
 
-`npm watch`
+`npm run watch`
 
 Load up at: `http://localhost:9000`
 
+## Production
+
+`npm start`
+
 ## Credits
 
-The [Star Wars opening crawl](http://codepen.io/TimPietrusky/pen/eHGfj) by
-[Tim Pietrusky](http://codepen.io/TimPietrusky) was very helpful, thanks Tim.
+Loosely based on the [Star Wars opening crawl](http://codepen.io/TimPietrusky/pen/eHGfj) by
+[Tim Pietrusky](http://codepen.io/TimPietrusky).
 
 Restart icon by [Icons8](https://thenounproject.com/Icons8) - public domain.
 
