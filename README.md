@@ -5,6 +5,8 @@ Every year, I make a web app as a kind of digital Christmas 'card' for my collea
 This year had to be Star Wars themed! Try it out in Chrome, Firefox or Safari on the desktop.
 Don't forget to turn your sound up.
 
+It was an opportunity to try out [mo.js](http://mojs.io) and get to grips with [Webpack](https://webpack.github.io/).
+
 To see my previous Christmas cards, take a look at the [container project here](https://github.com/poshaughnessy/Merry-Christmas-From-Peter).
 
 ## Development
