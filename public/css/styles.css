@@ -80,7 +80,7 @@ body {
   font-size: 3em;
   font-weight: bold;
   color: #ff6;
-  width: 75%;
+  width: 15em;
   -webkit-transform-origin: 50% 75%;
   transform-origin: 50% 75%;
   -webkit-transform: perspective(300px) rotateX(25deg) translateY(1600px);
