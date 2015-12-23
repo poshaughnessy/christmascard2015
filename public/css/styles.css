@@ -80,8 +80,7 @@ body {
   font-size: 3em;
   font-weight: bold;
   color: #ff6;
-  width: 15em;
-  text-align: justify;
+  width: 75%;
   -webkit-transform-origin: 50% 75%;
   transform-origin: 50% 75%;
   -webkit-transform: perspective(300px) rotateX(25deg) translateY(1600px);
@@ -97,6 +96,10 @@ body {
 
 #starwars-crawl h1 {
   font-size: 1.41em;
+}
+
+#starwars-crawl p {
+  text-align: justify;
 }
 
 #starwars-logo {
