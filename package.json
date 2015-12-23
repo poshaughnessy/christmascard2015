@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Peter's digital Christmas card for 2015",
   "scripts": {
-    "build": "webpack --colors --progress",
-    "start": "node dev-server",
+    "build": "NODE_ENV=production webpack --colors --progress",
+    "start": "npm run build && node server",
+    "watch": "NODE_ENV=development node dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

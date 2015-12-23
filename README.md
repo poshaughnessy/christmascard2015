@@ -2,6 +2,8 @@
 
 Every year, I make a web app as a kind of digital Christmas 'card' for my colleagues.
 
+This year is Star Wars themed! Try it out in Chrome or Firefox.
+
 To see my previous Christmas cards, take a look at the [container project here](https://github.com/poshaughnessy/Merry-Christmas-From-Peter).
 
 ## Development
@@ -12,15 +14,9 @@ First:
 
 Then:
 
-`npm start`
+`npm watch`
 
-Load up: `http://localhost:9000`
-
-## Production
-
-In progress...
-
-`npm run build`
+Load up at: `http://localhost:9000`
 
 ## Credits
 
