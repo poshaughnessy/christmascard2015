@@ -96,6 +96,7 @@ body {
 
 #starwars-crawl-container {
   z-index: 10;
+  pointer-events: none;
 }
 
 #starwars-crawl {

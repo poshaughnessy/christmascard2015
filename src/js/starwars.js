@@ -5,7 +5,7 @@ const windowHeight = window.innerHeight;
 
 /* The crawl is roughly 2200px high */
 const crawlStartY = windowHeight + Math.min(windowHeight, 600);
-const crawlMoveY = Math.max(windowHeight * 3.5, 2400);
+const crawlMoveY = Math.max(windowHeight * 3.5, 2600);
 
 let intro = document.querySelector('#starwars-intro');
 let logo = document.querySelector('#starwars-logo');
